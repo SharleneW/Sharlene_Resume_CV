@@ -1,0 +1,133 @@
+* {
+  // outline: 1px solid #f00;
+  box-sizing: border-box;
+}
+html {
+  color: map-get($color, dark);
+  font-family: $font-family-base;
+}
+a {
+  text-decoration: none;
+}
+.wrap {
+  width: 100%;
+  // width: calc(100% - (15px * 2));
+  margin: 0 auto;
+  // padding: 0 30px;
+  @media (min-width: map-get($grid-breakpoints, xs)) {
+    min-width: map-get($grid-breakpoints, xs);
+  }
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    max-width: map-get($grid-breakpoints, sm);
+  }
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    max-width: map-get($grid-breakpoints, md);
+  }
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    max-width: map-get($grid-breakpoints, lg);
+  }
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    max-width: map-get($grid-breakpoints, xl);
+  }
+}
+
+.navbar {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  .wrap {
+    width: calc(100% - (15px * 2));
+    &::after {
+      @extend %clearfix;
+    }
+  }
+  .logo {
+    float: left;
+    font-size: 0;
+    a {
+      @extend %display-inline-block;
+      font-size: nth($font, 6);
+      font-family: $font-family-font-face;
+      margin: 18px 0;
+      color: map-get($color, black);
+      @media (min-width: map-get($grid-breakpoints, md)) {
+        margin: 48px 0;
+        font-size: nth($font, 7);
+      }
+    }
+  }
+  nav {
+    text-align: right;
+    @media (min-width: map-get($grid-breakpoints, md)) {
+    }
+    font-size: 0;
+    a {
+      display: block;
+      position: relative;
+      font-size: nth($font, 1);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: 26px 0;
+      padding: 20px;
+      color: map-get($color, black);
+      @media (min-width: map-get($grid-breakpoints, md)) {
+        // @extend %display-inline-block;
+        display: inline-block;
+        margin: 46px 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 12px;
+        border-bottom: 2px solid map-get($color, primary);
+        opacity: 0;
+        transition: opacity 1s;
+      }
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+      &.active {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @extend %clearfix;
+}
+
+.sidebar {
+  // @extend %display-inline-block;
+  font-size: 20px;
+  padding: 18px 0;
+  color: map-get($color, black);
+}
+.navbar_nav {
+  display: none;
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    display: none;
+  }
+}
+.desktop {
+  display: none;
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    display: block;
+  }
+}

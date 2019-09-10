@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sharlene Wen - Resume CV</title>
+    <link rel="stylesheet" href="dist/style/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="navbar">
+      <div class="wrap">
+        <div class="logo">
+          <a href="index.html">Sharlene</a>
+        </div>
+        <nav>
+          <div class="sidebar mobile" id="sidebar">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div class="navbar_nav">
+            <a href="#about" class="scrollTop" title="關於我">about</a>
+            <a href="#skills" class="scrollTop" title="技能熟練度">skills</a>
+            <a href="#portfolio" class="scrollTop" title="作品集">portfolio</a>
+            <a href="#contact" class="scrollTop" title="聯絡我">contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <main>
+      <!-- welcome start -->
+      <section class="welcome">
+        <div class="wrap">
+          <div class="container">
+            <h1>
+              你好，我是 <strong>Sharlene。</strong><br />是一位<strong
+                >網頁設計師、也是網站開發者。</strong
+              >
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- welcome end -->
+
+      <!-- about start -->
+      <section class="about">
+        <div class="wrap">
+          <div class="container" id="about">
+            <div class="category">About</div>
+            <div class="item_group animated">
+              <h2>從專案設計、網頁視覺至網站開發，已累積12年相關經歷。</h2>
+              <p>
+                性格沉穩、慢熟，行事風格自律、專注而有耐性。<br />
+                自我提升，不間斷的進修，在畫面、切版、網站、HTML5、APP開發等實務工作中磨練，將設計、網頁、程式等不同領域的經驗強化與串連。
+              </p>
+              <p>
+                <a
+                  href="./file/2019 Sharlene-CV.pdf"
+                  class="btn"
+                  target="_blank"
+                >
+                  CV <i class="fas fa-link fa-fw"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+
+      <!-- skills start -->
+      <section class="skills" id="skills">
+        <div class="wrap">
+          <div class="container">
+            <div class="category">skills</div>
+            <div class="item_group">
+              <div class="item animated">
+                <div class="pie pie1">
+                  <div class="pie_num">90<span>%</span></div>
+                </div>
+
+                <div class="item_txt">
+                  <h3>Software Skills</h3>
+                  <p>
+                    Illustrator / Photoshop / InDesign / Xd
+                  </p>
+                </div>
+              </div>
+              <div class="item animated">
+                <div class="pie pie2">
+                  <div class="pie_num">75<span>%</span></div>
+                </div>
+                <div class="item_txt">
+                  <h3>FrontEnd Skills</h3>
+                  <p>
+                    HTML / CSS / SCSS / Responsive Web Design / Javascript /
+                    jQuery
+                  </p>
+                </div>
+              </div>
+              <div class="item animated">
+                <div class="pie pie3">
+                  <div class="pie_num">55<span>%</span></div>
+                </div>
+                <div class="item_txt">
+                  <h3>BackEnd Skills</h3>
+                  <p>
+                    Asp.Net WebForm / MSSQL
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skills end -->
+
+      <!-- portfolio start -->
+      <section class="portfolio">
+        <div class="wrap">
+          <div class="container" id="portfolio">
+            <div class="category">portfolio</div>
+            <div class="item_group">
+              <div class="item">
+                <div
+                  class="item_bg"
+                  style="background-image: url('https://picsum.photos/300/200?image=0'); background-repeat: no-repeat;background-position: 0 0;background-size: cover;"
+                >
+                  <div class="item_cover">
+                    <div class="icon">
+                      <a href="javascript:void(0)" id="p_demo1"
+                        ><i class="fas fa-search-plus"></i
+                      ></a>
+                      <a href="javascript:void(0)"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- portfolio end -->
+
+      <!-- contact start -->
+      <section class="contact">
+        <div class="wrap">
+          <div class="container" id="contact">
+            <div class="category">contact</div>
+            <div class="item_group">
+              <div class="email_group">
+                <i class="fas fa-paper-plane fa-fw fa-2x"></i>
+                <a
+                  href="mailto:pokey.wen@gmail.com"
+                  class="pokey_email"
+                  title="Email Address"
+                  >pokey.wen@gmail.com</a
+                >
+              </div>
+              <form action="">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your name"
+                  required="required"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required="required"
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                  required="required"
+                ></textarea>
+                <button id="btn_Send" class="btn">Send</button>
+                <a href="#" id="sendMail"></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact end -->
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="container">
+          <ul>
+            <li class="f_left">
+              This is my personal resume and I hope you enjoyed it. See you
+              soon.
+            </li>
+            <li class="f_right">Made with in Sharlene</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <div class="p_demo" id="demo1">
+      <div class="p_btn_close"></div>
+      <div class="p_demo_group">
+        <div class="wrap">
+          <div class="container">
+            <img src="https://picsum.photos/300/200?image=0" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/all.js"></script>
+  </body>
+</html>

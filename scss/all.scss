@@ -1,0 +1,14 @@
+@font-face {
+  　font-family: SignPainter;
+  　src: local(ttc), url(../fonts/SignPainter.ttc);
+  　font-weight: HouseScript;
+}
+
+// @import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "nav";
+@import "content";
+@import "footer";

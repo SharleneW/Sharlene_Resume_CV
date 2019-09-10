@@ -1,0 +1,25 @@
+footer {
+  background-color: map-get($color, black);
+  padding: 60px 0;
+  @include font(1);
+  color: map-get($color, white);
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ul {
+    @extend %clearfix;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  // .f_left {
+  //   float: left;
+  // }
+  // .f_right {
+  //   float: right;
+  // }
+}

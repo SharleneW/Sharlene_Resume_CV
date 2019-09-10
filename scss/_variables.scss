@@ -1,0 +1,39 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$font: 14px 16px 18px 25px 30px 40px 50px;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Microsoft JhengHei" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-family-font-face: "SignPainter";
+
+$color: (
+  default: #666666,
+  primary: #d7be77,
+  dark: #151514,
+  black: #000,
+  light: #f2f2f2,
+  lighter: #d2d2d2,
+  white: #fff
+);
+
+%display-inline-block {
+  display: inline-block;
+}
+%clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
