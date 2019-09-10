@@ -70,15 +70,5 @@ $(document).ready(function() {
     var name = $("#name").val();
     var email = $("#email").val();
     var msg = $("#message").val();
-
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "pokey.wen",
-      Password: "s6248w0927",
-      To: "pokey.wen@gmail.com",
-      From: email,
-      Subject: name,
-      Body: msg
-    }).then(message => alert(message));
   });
 });
