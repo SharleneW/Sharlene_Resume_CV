@@ -560,6 +560,9 @@ main .item {
 .portfolio .item_bg {
   height: 220px;
   background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
   position: relative;
   overflow: hidden;
 }

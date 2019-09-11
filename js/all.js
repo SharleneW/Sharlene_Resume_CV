@@ -62,8 +62,12 @@ $(document).ready(function() {
   $("#p_demo1").on("click", function() {
     $("#demo1").css("display", "block");
   });
+  $("#p_demo2").on("click", function() {
+    $("#demo2").css("display", "block");
+  });
   $(".p_btn_close").on("click", function() {
     $("#demo1").css("display", "none");
+    $("#demo2").css("display", "none");
   });
 
   $("#btn_Send").on("click", function() {

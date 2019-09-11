@@ -153,7 +153,7 @@ main .item { float: left; text-align: center; }
   .portfolio .item + .item { padding-left: 15px; }
   .portfolio .item:nth-child(3n-2) { padding-left: 0; } }
 
-.portfolio .item_bg { height: 220px; background-color: #f2f2f2; position: relative; overflow: hidden; }
+.portfolio .item_bg { height: 220px; background-color: #f2f2f2; background-repeat: no-repeat; background-position: 0 0; background-size: cover; position: relative; overflow: hidden; }
 
 .portfolio .item_bg .item_cover { position: absolute; top: 10px; left: 10px; bottom: 10px; right: 10px; background-color: rgba(215, 190, 119, 0.85); opacity: 0; -webkit-transition: all 1s; transition: all 1s; }
 

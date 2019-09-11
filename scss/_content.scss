@@ -208,6 +208,9 @@ main {
   .item_bg {
     height: 220px;
     background-color: map-get($color, light);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
     position: relative;
     overflow: hidden;
     .item_cover {
