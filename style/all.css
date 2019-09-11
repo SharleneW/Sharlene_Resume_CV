@@ -191,7 +191,7 @@ main .item { float: left; text-align: center; }
 
 .btn:hover { background-color: #151514; color: #d7be77; }
 
-.p_demo { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #fff; z-index: 100; }
+.p_demo { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #fff; overflow-y: auto; z-index: 100; }
 
 .p_demo .container { padding-top: 150px; }
 

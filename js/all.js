@@ -61,13 +61,16 @@ $(document).ready(function() {
 
   $("#p_demo1").on("click", function() {
     $("#demo1").css("display", "block");
+    $("html").css("overflow-y", "hidden");
   });
   $("#p_demo2").on("click", function() {
     $("#demo2").css("display", "block");
+    $("html").css("overflow-y", "hidden");
   });
   $(".p_btn_close").on("click", function() {
     $("#demo1").css("display", "none");
     $("#demo2").css("display", "none");
+    $("html").css("overflow", "auto");
   });
 
   $("#btn_Send").on("click", function() {

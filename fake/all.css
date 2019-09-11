@@ -696,6 +696,7 @@ main .item {
   bottom: 0;
   left: 0;
   background-color: #fff;
+  overflow-y: auto;
   z-index: 100;
 }
 
