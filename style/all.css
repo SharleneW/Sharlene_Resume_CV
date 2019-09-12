@@ -171,9 +171,7 @@ main .item { float: left; text-align: center; }
 
 .contact .item_group { margin-top: 35px; padding-left: 15px; padding-right: 15px; }
 
-.contact .email_group { margin-bottom: 40px; }
-
-.contact .email_group a.pokey_email { font-size: 32px; font-weight: bold; color: #000; display: block; margin-top: 15px; }
+.contact .email_group a.pokey_email { font-size: 29px; font-weight: bold; color: #000; display: block; margin-top: 15px; }
 
 @media (min-width: 768px) { .contact .email_group a.pokey_email { display: inline; margin-left: 15px; } }
 

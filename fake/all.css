@@ -617,12 +617,8 @@ main .item {
   padding-right: 15px;
 }
 
-.contact .email_group {
-  margin-bottom: 40px;
-}
-
 .contact .email_group a.pokey_email {
-  font-size: 32px;
+  font-size: 29px;
   font-weight: bold;
   color: #000;
   display: block;
