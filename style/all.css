@@ -77,9 +77,9 @@ a { text-decoration: none; }
 
 @media (min-width: 768px) { .desktop { display: block; } }
 
-.welcome .container { background-image: url("https://picsum.photos/1200/618?image=20"); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+.welcome .container { background-image: url("../../file/priscilla-du-preez-SLB48wK26Og-unsplash.jpg"); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 
-.welcome h1 { font-size: 35px; text-align: center; line-height: 1.2; color: #000; padding: 189px 0; font-weight: lighter; }
+.welcome h1 { font-size: 35px; text-align: center; line-height: 1.2; color: #fff; padding: 189px 0; font-weight: lighter; }
 
 @media (min-width: 768px) { .welcome h1 { font-size: 40px; } }
 
@@ -153,7 +153,7 @@ main .item { float: left; text-align: center; }
   .portfolio .item + .item { padding-left: 15px; }
   .portfolio .item:nth-child(3n-2) { padding-left: 0; } }
 
-.portfolio .item_bg { height: 220px; background-color: #f2f2f2; background-repeat: no-repeat; background-position: 0 0; background-size: cover; position: relative; overflow: hidden; }
+.portfolio .item_bg { height: 220px; background-color: #f2f2f2; background-repeat: no-repeat; background-position: center top; background-size: cover; position: relative; overflow: hidden; }
 
 .portfolio .item_bg .item_cover { position: absolute; top: 10px; left: 10px; bottom: 10px; right: 10px; background-color: rgba(215, 190, 119, 0.85); opacity: 0; -webkit-transition: all 1s; transition: all 1s; }
 

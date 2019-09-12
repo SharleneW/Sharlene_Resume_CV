@@ -2,7 +2,7 @@
   .container {
     // height: 618px;
     // background-color: map-get($color, light);
-    background-image: url("https://picsum.photos/1200/618?image=20");
+    background-image: url("../../file/priscilla-du-preez-SLB48wK26Og-unsplash.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +10,7 @@
   }
   h1 {
     font-size: 35px;
+
     @media (min-width: map-get($grid-breakpoints, md)) {
       font-size: 40px;
     }
@@ -18,7 +19,7 @@
     }
     text-align: center;
     line-height: 1.2;
-    color: map-get($color, black);
+    color: map-get($color, white);
     padding: 189px 0;
     font-weight: lighter;
   }
@@ -209,7 +210,7 @@ main {
     height: 220px;
     background-color: map-get($color, light);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center top;
     background-size: cover;
     position: relative;
     overflow: hidden;

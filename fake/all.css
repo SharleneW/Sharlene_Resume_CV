@@ -318,7 +318,7 @@ a {
 }
 
 .welcome .container {
-  background-image: url("https://picsum.photos/1200/618?image=20");
+  background-image: url("../../file/priscilla-du-preez-SLB48wK26Og-unsplash.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -329,7 +329,7 @@ a {
   font-size: 35px;
   text-align: center;
   line-height: 1.2;
-  color: #000;
+  color: #fff;
   padding: 189px 0;
   font-weight: lighter;
 }
@@ -561,7 +561,7 @@ main .item {
   height: 220px;
   background-color: #f2f2f2;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center top;
   background-size: cover;
   position: relative;
   overflow: hidden;
