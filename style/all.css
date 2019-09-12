@@ -79,7 +79,7 @@ a { text-decoration: none; }
 
 .welcome .container { background-image: url("../../file/priscilla-du-preez-SLB48wK26Og-unsplash.jpg"); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 
-.welcome h1 { font-size: 35px; text-align: center; line-height: 1.2; color: #fff; padding: 189px 0; font-weight: lighter; }
+.welcome h1 { font-size: 35px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); text-align: center; line-height: 1.2; color: #fff; padding: 189px 0; font-weight: lighter; }
 
 @media (min-width: 768px) { .welcome h1 { font-size: 40px; } }
 

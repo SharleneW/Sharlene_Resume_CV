@@ -327,6 +327,7 @@ a {
 
 .welcome h1 {
   font-size: 35px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   line-height: 1.2;
   color: #fff;
