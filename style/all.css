@@ -77,7 +77,10 @@ a { text-decoration: none; }
 
 @media (min-width: 768px) { .desktop { display: block; } }
 
-.welcome .container { background-image: url("../../file/priscilla-du-preez-SLB48wK26Og-unsplash.jpg"); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+.welcome .container::before { content: ""; background-image: inherit; position: fixed; top: 76px; left: 0; height: 100vh; width: 100%; background-image: url("../../file/priscilla-du-preez-SLB48wK26Og-unsplash.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat; z-index: -1; }
+
+@media (min-width: 576px) { .welcome .container { background-image: url("../../file/priscilla-du-preez-SLB48wK26Og-unsplash.jpg"); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+  .welcome .container::before { position: initial; } }
 
 .welcome h1 { font-size: 35px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); text-align: center; line-height: 1.2; color: #fff; padding: 189px 0; font-weight: lighter; }
 
@@ -112,6 +115,8 @@ main .item { float: left; text-align: center; }
 .about h2 { font-size: 25px; font-weight: bold; line-height: 1.2; }
 
 .about p { max-width: 640px; margin: 0 auto; line-height: 2; margin-top: 35px; }
+
+.skills { background-color: #fff; }
 
 .skills .item_group { padding-top: 35px; }
 
