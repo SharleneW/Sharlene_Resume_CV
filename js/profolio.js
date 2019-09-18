@@ -30,7 +30,9 @@ var profolioFun = () => {
     let imgLen = profolio[loop].image.length;
     let popUpImg = "";
     for (let loop_img = 0; loop_img < imgLen; loop_img++) {
-      popUpImg += `<img src="./file/${profolio[loop].image[loop_img]}" width="100%" alt="${profolio[loop].image[loop_img]}" />`;
+      popUpImg += `<img src="./file/${
+        profolio[loop].image[loop_img]
+      }" width="100%" alt="${profolio[loop].image[loop_img].split(".")[0]}" />`;
     }
     popUpView += `
     <div class="p_demo" id="demo${id}">
