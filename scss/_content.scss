@@ -358,6 +358,9 @@ main {
   z-index: 100;
   .container {
     padding-top: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
   }
   .p_btn_close {
     cursor: pointer;
@@ -381,6 +384,11 @@ main {
     }
     &::after {
       transform: rotate(-45deg);
+    }
+  }
+  img {
+    & + img {
+      margin-top: 20px;
     }
   }
 }

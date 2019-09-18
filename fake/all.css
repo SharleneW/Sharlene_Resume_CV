@@ -732,6 +732,9 @@ main .item {
 
 .p_demo .container {
   padding-top: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
 }
 
 .p_demo .p_btn_close {
@@ -761,6 +764,10 @@ main .item {
 .p_demo .p_btn_close::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.p_demo img + img {
+  margin-top: 20px;
 }
 
 .animated {

@@ -198,7 +198,7 @@ main .item { float: left; text-align: center; }
 
 .p_demo { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #fff; overflow-y: auto; z-index: 100; }
 
-.p_demo .container { padding-top: 150px; }
+.p_demo .container { padding-top: 150px; padding-left: 15px; padding-right: 15px; padding-bottom: 50px; }
 
 .p_demo .p_btn_close { cursor: pointer; position: absolute; right: 32px; top: 32px; width: 32px; height: 32px; opacity: 0.3; }
 
@@ -207,6 +207,8 @@ main .item { float: left; text-align: center; }
 .p_demo .p_btn_close::before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 
 .p_demo .p_btn_close::after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.p_demo img + img { margin-top: 20px; }
 
 .animated { opacity: 0; -webkit-transition: all 1.5s; transition: all 1.5s; -webkit-transform: translateY(50px); transform: translateY(50px); }
 
