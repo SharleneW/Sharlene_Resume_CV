@@ -568,6 +568,7 @@ main .item {
 .portfolio .item {
   width: 100%;
   margin-top: 15px;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -582,6 +583,16 @@ main .item {
   }
 }
 
+.portfolio .item:hover .item_bg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.portfolio .item:hover .item_cover,
+.portfolio .item:active .item_cover {
+  opacity: 1;
+}
+
 .portfolio .item_bg {
   height: 220px;
   background-color: #f2f2f2;
@@ -590,9 +601,11 @@ main .item {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.portfolio .item_bg .item_cover {
+.portfolio .item_cover {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -602,11 +615,7 @@ main .item {
   opacity: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
-}
-
-.portfolio .item_bg:hover .item_cover,
-.portfolio .item_bg:active .item_cover {
-  opacity: 1;
+  z-index: 1;
 }
 
 .portfolio .icon {
