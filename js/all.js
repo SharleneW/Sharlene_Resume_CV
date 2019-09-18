@@ -67,9 +67,64 @@ $(document).ready(function() {
     $("#demo2").css("display", "block");
     $("html").css("overflow-y", "hidden");
   });
+  $("#p_demo3").on("click", function() {
+    $("#demo3").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo4").on("click", function() {
+    $("#demo4").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo5").on("click", function() {
+    $("#demo5").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo6").on("click", function() {
+    $("#demo6").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo7").on("click", function() {
+    $("#demo7").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo8").on("click", function() {
+    $("#demo8").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo9").on("click", function() {
+    $("#demo9").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo10").on("click", function() {
+    $("#demo10").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo11").on("click", function() {
+    $("#demo11").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo12").on("click", function() {
+    $("#demo12").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
+  $("#p_demo13").on("click", function() {
+    $("#demo13").css("display", "block");
+    $("html").css("overflow-y", "hidden");
+  });
   $(".p_btn_close").on("click", function() {
     $("#demo1").css("display", "none");
     $("#demo2").css("display", "none");
+    $("#demo3").css("display", "none");
+    $("#demo4").css("display", "none");
+    $("#demo5").css("display", "none");
+    $("#demo6").css("display", "none");
+    $("#demo7").css("display", "none");
+    $("#demo8").css("display", "none");
+    $("#demo9").css("display", "none");
+    $("#demo10").css("display", "none");
+    $("#demo11").css("display", "none");
+    $("#demo12").css("display", "none");
+    $("#demo13").css("display", "none");
     $("html").css("overflow", "auto");
   });
 
