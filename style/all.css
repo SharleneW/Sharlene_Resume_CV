@@ -164,7 +164,7 @@ main .item { float: left; text-align: center; }
 
 .portfolio .item_bg { height: 220px; background-color: #f2f2f2; background-repeat: no-repeat; background-position: center top; background-size: cover; position: relative; overflow: hidden; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
 
-.portfolio .item_cover { position: absolute; top: 10px; left: 10px; bottom: 10px; right: 10px; background-color: rgba(215, 190, 119, 0.85); opacity: 0; -webkit-transition: all 1s; transition: all 1s; z-index: 1; }
+.portfolio .item_cover { position: absolute; top: 10px; left: 10px; bottom: 10px; right: 10px; background-color: rgba(215, 190, 119, 0.85); opacity: 0; -webkit-transition: all 1s; transition: all 1s; }
 
 .portfolio .icon { font-size: 0; position: absolute; margin: 0 auto; left: 0; right: 0; bottom: 30px; }
 

@@ -615,7 +615,6 @@ main .item {
   opacity: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
-  z-index: 1;
 }
 
 .portfolio .icon {
