@@ -211,10 +211,27 @@ main {
       background-color: map-get($color, white);
     }
   }
+  .item_category {
+    margin-top: 35px;
+    font-size: 0;
+    li {
+      display: inline-block;
+
+      & + li {
+        margin-left: 10px;
+      }
+      a {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }
+  }
+
   .item_group {
     margin-top: 20px;
   }
   .item {
+    position: relative;
     width: 100%;
     margin-top: 15px;
     overflow: hidden;
@@ -344,6 +361,10 @@ main {
     background-color: map-get($color, dark);
     color: map-get($color, primary);
   }
+}
+.on {
+  background-color: map-get($color, dark);
+  color: map-get($color, primary);
 }
 
 .p_demo {

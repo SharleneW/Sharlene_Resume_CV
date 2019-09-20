@@ -561,11 +561,30 @@ main .item {
   background-color: #fff;
 }
 
+.portfolio .item_category {
+  margin-top: 35px;
+  font-size: 0;
+}
+
+.portfolio .item_category li {
+  display: inline-block;
+}
+
+.portfolio .item_category li + li {
+  margin-left: 10px;
+}
+
+.portfolio .item_category li a {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
 .portfolio .item_group {
   margin-top: 20px;
 }
 
 .portfolio .item {
+  position: relative;
   width: 100%;
   margin-top: 15px;
   overflow: hidden;
@@ -714,6 +733,11 @@ main .item {
 }
 
 .btn:hover {
+  background-color: #151514;
+  color: #d7be77;
+}
+
+.on {
   background-color: #151514;
   color: #d7be77;
 }

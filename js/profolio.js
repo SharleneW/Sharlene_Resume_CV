@@ -1,4 +1,4 @@
-var profolioFun = () => {
+var profolioFun = isDev => {
   $("#itemList").html("");
   $("#pupUp").html("");
   let htmlView = "",
@@ -7,8 +7,9 @@ var profolioFun = () => {
     let id = profolio[loop].id;
     let link = profolio[loop].webLink;
 
-    htmlView += `
-    <div class="item animated">
+    if (isDev === profolio[loop].dev) {
+      htmlView += `
+    <div class="item">
       <div class="item_bg"style="background-image: url('./file/${
         profolio[loop].image[0]
       }'); "></div>
@@ -26,6 +27,7 @@ var profolioFun = () => {
         </div>
       </div>
     </div>`;
+    }
 
     let imgLen = profolio[loop].image.length;
     let popUpImg = "";
@@ -46,6 +48,7 @@ var profolioFun = () => {
   }
 
   $("#itemList").append(htmlView);
+  // $("#dev_group").append(htmlView);
   $("#pupUp").append(popUpView);
 
   for (let loop = 0; loop < profolio.length; loop++) {
@@ -68,42 +71,50 @@ var profolioFun = () => {
 var profolio = [
   {
     id: "1",
+    dev: false,
     webLink: "https://www.liontravel.com/comm/2trs/6/2015aeshopping/",
     image: ["東北亞購物.jpg"]
   },
   {
     id: "2",
+    dev: false,
     webLink: "https://www.liontravel.com/comm/2trs/1/us_ca_thanksgiving/",
     image: ["美加促銷2.jpg"]
   },
   {
     id: "3",
+    dev: false,
     webLink: "https://www.liontravel.com/event/foodfestival/",
     image: ["玩味主義首頁2.jpg", "玩味主義產品2.jpg"]
   },
   {
     id: "4",
+    dev: false,
     webLink: "",
     image: ["鹿兒島2-1.jpg"]
   },
   {
     id: "5",
+    dev: false,
     webLink: "https://www.liontravel.com/comm/2trs/5/annualleave/",
     image: ["大陸消年假3.jpg"]
   },
   {
     id: "6",
+    dev: false,
     webLink:
       "https://www.liontravel.com/comm/2hotsales/chinesenewyear/tour_japan.asp",
     image: ["1104產品首頁01-2.jpg", "1104贈品首頁01-3.jpg"]
   },
   {
     id: "7",
+    dev: false,
     webLink: "https://www.liontravel.com/comm/2trs/hotsale/38woman/theme.asp",
     image: ["WOMEN去旅行3-1.jpg"]
   },
   {
     id: "8",
+    dev: false,
     webLink: "https://www.liontravel.com/comm/2trs/4/micro-world/tour02.asp",
     image: [
       "微觀世界首頁0219.jpg",
@@ -113,11 +124,13 @@ var profolio = [
   },
   {
     id: "9",
+    dev: false,
     webLink: "",
     image: ["西班牙.jpg", "葡萄牙.jpg", "摩洛哥.jpg"]
   },
   {
     id: "10",
+    dev: false,
     webLink: "",
     image: [
       "20161118精彩九州1.jpg",
@@ -128,11 +141,13 @@ var profolio = [
   },
   {
     id: "11",
+    dev: false,
     webLink: "",
     image: ["東北1.jpg", "東北2.jpg", "東北3.jpg", "東北4.jpg"]
   },
   // {
   //   "id": "12",
+  // dev: false,
   //   "webLink": "",
   //   "image": [
   //     "20170209日本鐵道假期2.jpg",
@@ -143,6 +158,7 @@ var profolio = [
   // },
   {
     id: "13",
+    dev: false,
     webLink: "",
     image: [
       "20160422大充電旅行.jpg",
@@ -154,6 +170,15 @@ var profolio = [
       "出國夏休-旅費下修-6.jpg",
       "女子旅行-細.jpg",
       "每月一物960-2.jpg"
+    ]
+  },
+  {
+    id: "14",
+    dev: true,
+    webLink: "https://www.itis.org.tw/StudyIssue/IssueList.aspx",
+    image: [
+      "20171025研究議題參與平台_列表頁.jpg",
+      "20171025研究議題參與平台_附議頁.jpg"
     ]
   }
 ];

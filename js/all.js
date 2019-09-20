@@ -59,7 +59,18 @@ $(document).ready(function() {
     }
   });
 
-  profolioFun();
+  profolioFun(false);
+  $("#des").addClass("on");
+  $("#des").on("click", function() {
+    profolioFun(false);
+    $(this).addClass("on");
+    $("#dev").removeClass("on");
+  });
+  $("#dev").on("click", function() {
+    profolioFun(true);
+    $(this).addClass("on");
+    $("#des").removeClass("on");
+  });
 
   $("#btn_Send").on("click", function() {
     var name = $("#name").val();

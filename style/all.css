@@ -150,9 +150,17 @@ main .item { float: left; text-align: center; }
 
 .portfolio .category::after { background-color: #fff; }
 
+.portfolio .item_category { margin-top: 35px; font-size: 0; }
+
+.portfolio .item_category li { display: inline-block; }
+
+.portfolio .item_category li + li { margin-left: 10px; }
+
+.portfolio .item_category li a { font-size: 14px; padding: 5px 10px; }
+
 .portfolio .item_group { margin-top: 20px; }
 
-.portfolio .item { width: 100%; margin-top: 15px; overflow: hidden; }
+.portfolio .item { position: relative; width: 100%; margin-top: 15px; overflow: hidden; }
 
 @media (min-width: 768px) { .portfolio .item { width: calc((100% - 30px) / 3); }
   .portfolio .item + .item { margin-left: 15px; }
@@ -195,6 +203,8 @@ main .item { float: left; text-align: center; }
 .btn { margin-top: 15px; font-size: 18px; background-color: #d7be77; color: #fff; border-width: 0px; padding: 10px; -webkit-transition: all 1s; transition: all 1s; }
 
 .btn:hover { background-color: #151514; color: #d7be77; }
+
+.on { background-color: #151514; color: #d7be77; }
 
 .p_demo { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #fff; overflow-y: auto; z-index: 100; }
 
