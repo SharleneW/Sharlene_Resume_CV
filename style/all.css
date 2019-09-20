@@ -156,7 +156,7 @@ main .item { float: left; text-align: center; }
 
 .portfolio .item_category li + li { margin-left: 10px; }
 
-.portfolio .item_category li a { font-size: 14px; padding: 5px 10px; }
+.portfolio .item_category li a { font-size: 14px; padding: 5px 10px; border: 1px solid #d7be77; }
 
 .portfolio .item_group { margin-top: 20px; }
 
@@ -204,7 +204,7 @@ main .item { float: left; text-align: center; }
 
 .btn:hover { background-color: #151514; color: #d7be77; }
 
-.on { background-color: #151514; color: #d7be77; }
+.on { background-color: #151514; color: #d7be77; border: 1px solid #d7be77; }
 
 .p_demo { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #fff; overflow-y: auto; z-index: 100; }
 

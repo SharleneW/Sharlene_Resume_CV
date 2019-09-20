@@ -223,6 +223,7 @@ main {
       a {
         font-size: 14px;
         padding: 5px 10px;
+        border: 1px solid map-get($color, primary);
       }
     }
   }
@@ -365,6 +366,7 @@ main {
 .on {
   background-color: map-get($color, dark);
   color: map-get($color, primary);
+  border: 1px solid map-get($color, primary);
 }
 
 .p_demo {

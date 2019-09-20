@@ -577,6 +577,7 @@ main .item {
 .portfolio .item_category li a {
   font-size: 14px;
   padding: 5px 10px;
+  border: 1px solid #d7be77;
 }
 
 .portfolio .item_group {
@@ -740,6 +741,7 @@ main .item {
 .on {
   background-color: #151514;
   color: #d7be77;
+  border: 1px solid #d7be77;
 }
 
 .p_demo {
