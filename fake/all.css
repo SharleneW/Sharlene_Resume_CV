@@ -474,73 +474,68 @@ main .item {
 
 .skills .pie {
   position: relative;
-  width: 100px;
-  height: 100px;
+  z-index: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(0, #d7be77)), -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(0, #000));
-  background: linear-gradient(to left, transparent 50%, #d7be77 0), linear-gradient(to right, transparent 50%, #000 0);
-  margin: 0 auto 35px;
+  text-align: center;
+  color: #000;
+  font-size: 140%;
+  background-color: #000;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(0, #d7be77));
+  background-image: linear-gradient(to right, transparent 50%, #d7be77 0);
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.skills .pie::before {
-  content: "";
-  display: block;
-  margin-left: 50%;
-  height: 100%;
-  border-radius: 0 100% 100% 0 / 50%;
-  background-color: #d7be77;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: rotate(0.1turn);
-          transform: rotate(0.1turn);
-}
-
-.skills .pie::after {
-  content: "";
-  display: block;
-  background-color: #fff;
-  border-radius: 50%;
-  height: 80%;
-  width: 80%;
+.skills .pie strong {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-}
-
-.skills .pie_num {
-  position: absolute;
-  font-size: 40px;
+  width: 100%;
+  left: 0;
+  z-index: 1;
   font-weight: bold;
-  top: 50%;
+}
+
+.skills .pie div {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
   left: 50%;
-  z-index: 20;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transition: -webkit-transform 0.7s linear;
+  transition: -webkit-transform 0.7s linear;
+  transition: transform 0.7s linear;
+  transition: transform 0.7s linear, -webkit-transform 0.7s linear;
 }
 
-.skills .pie_num span {
-  font-size: 1rem;
+.skills .pie > .div_1 {
+  background-color: inherit;
+  z-index: -2;
 }
 
-.skills .pie1::before {
-  content: "";
-  -webkit-transform: rotate(-0.9turn);
-          transform: rotate(-0.9turn);
+.skills .pie > .div_2 {
+  height: 110%;
+  opacity: 0;
+  z-index: -1;
+  background-color: #d7be77;
 }
 
-.skills .pie2::before {
-  content: "";
-  -webkit-transform: rotate(-0.75turn);
-          transform: rotate(-0.75turn);
-}
-
-.skills .pie3::before {
-  content: "";
-  -webkit-transform: rotate(-0.55turn);
-          transform: rotate(-0.55turn);
+.skills .pie span {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .skills h3 {
@@ -577,7 +572,6 @@ main .item {
 .portfolio .item_category li a {
   font-size: 14px;
   padding: 5px 10px;
-  border: 1px solid #d7be77;
 }
 
 .portfolio .item_group {
@@ -731,17 +725,18 @@ main .item {
   padding: 10px;
   -webkit-transition: all 1s;
   transition: all 1s;
+  border: 1px solid #d7be77;
 }
 
 .btn:hover {
   background-color: #151514;
   color: #d7be77;
+  border: 1px solid #d7be77;
 }
 
 .on {
   background-color: #151514;
   color: #d7be77;
-  border: 1px solid #d7be77;
 }
 
 .p_demo {
@@ -824,7 +819,6 @@ footer .container {
 }
 
 footer ul {
-  text-transform: uppercase;
   text-align: center;
 }
 

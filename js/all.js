@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  var showSkill = false;
+
   $("#sidebar").on("click", function() {
     $(".navbar_nav").slideToggle();
   });
@@ -42,9 +44,34 @@ $(document).ready(function() {
 
     $(".animated").each(function() {
       var thisPos = $(this).offset().top;
+
       if (scrollTop + windowHeight >= thisPos) {
         $(this).addClass("fadeIn");
+        if (!showSkill) {
+          showSkill = true;
+          var pie1 = new Pie({
+            el: "#ring-pie1",
+            animite: true,
+            ring: 0.6
+          });
+          pie1.init();
+
+          var pie2 = new Pie({
+            el: "#ring-pie2",
+            animite: true,
+            ring: 0.6
+          });
+          pie2.init();
+
+          var pie3 = new Pie({
+            el: "#ring-pie3",
+            animite: true,
+            ring: 0.6
+          });
+          pie3.init();
+        }
       }
+
       // console.log("thisPos", thisPos);
     });
   });
