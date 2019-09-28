@@ -1,11 +1,11 @@
 // https://segmentfault.com/a/1190000005624945
 // http://lancer07.github.io/css3_pie/
 var Pie = function(args) {
-  var isAnimate = args.animite, // 是否需要动画
-    isRing = args.ring, // 是否空心
-    color = args.color, // 自定义颜色
-    isShowNumber = args.number, // 是否显示中间的百分比
-    rotate = args.rotate; // 是否旋转
+  var isAnimate = args.animite, // 動畫
+    isRing = args.ring, // 空心
+    color = args.color, // 顏色
+    isShowNumber = args.number, // 百分比
+    rotate = args.rotate; // 旋转
 
   function _append(me, percent) {
     var divs = '<div class="div_1"></div><div class="div_2"></div>';

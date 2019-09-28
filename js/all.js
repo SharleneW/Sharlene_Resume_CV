@@ -47,29 +47,32 @@ $(document).ready(function() {
 
       if (scrollTop + windowHeight >= thisPos) {
         $(this).addClass("fadeIn");
-        if (!showSkill) {
-          showSkill = true;
-          var pie1 = new Pie({
-            el: "#ring-pie1",
-            animite: true,
-            ring: 0.6
-          });
-          pie1.init();
 
-          var pie2 = new Pie({
-            el: "#ring-pie2",
-            animite: true,
-            ring: 0.6
-          });
-          pie2.init();
+        setTimeout(function() {
+          if (!showSkill) {
+            showSkill = true;
+            var pie1 = new Pie({
+              el: "#ring-pie1",
+              animite: true,
+              ring: 0.6
+            });
+            pie1.init();
 
-          var pie3 = new Pie({
-            el: "#ring-pie3",
-            animite: true,
-            ring: 0.6
-          });
-          pie3.init();
-        }
+            var pie2 = new Pie({
+              el: "#ring-pie2",
+              animite: true,
+              ring: 0.6
+            });
+            pie2.init();
+
+            var pie3 = new Pie({
+              el: "#ring-pie3",
+              animite: true,
+              ring: 0.6
+            });
+            pie3.init();
+          }
+        }, 500);
       }
 
       // console.log("thisPos", thisPos);
